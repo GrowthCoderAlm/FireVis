@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Жестко фиксируем элементы Leaflet, чтобы они не схлопывались в Turbopack */
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #1b2313 !important; /* Болотный фон в тон вашего макета */
+}
+
+/* Сглаживаем появление тайлов при загрузке */
+.leaflet-tile-container {
+  transition: opacity 0.2s ease-in-out;
+}
+
