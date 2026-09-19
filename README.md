@@ -1,3 +1,12 @@
+Основа readme автоматически создана Next.js и по большей части исчерпывающая.
+
+Перед установкой библиотек на компьютере должны быть установлены:Node.js (версии 18.x или выше)Python (версии 3.10 или выше)
+
+Остальные зависимости ищите в package.json
+
+Удачи это запустить, я выхожу с поднятыми руками.
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
